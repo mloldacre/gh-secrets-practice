@@ -34,7 +34,7 @@ jobs:
       - name: Output information
         run: |
           echo "MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}"
-          echo "SURPRISE: env.surprise"
+          echo "SURPRISE: ${{ env.surprise }}"
   deploy:
     needs: test
     runs-on: ubuntu-latest
